@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+.logo{
+  width: 100px;
+  height:100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.more{
+  margin-left:85%;
+  margin-top:10px;
+  
+}
+.more > *{
+  text-decoration: none;
+}
+.bar{
+  transition: all 0.5s ease;
+  padding: 0 20px;
+  color :white;
+  text-decoration: none;
+}
+.bar:hover{
+  transform: scale(2);
+  margin: 0 15px;
+  color :aqua;
+}
+footer{
+  position: relative;
+  bottom:0;
+  height:100%;
+  background: black;
+  /* background: linear-gradient(144deg, rgba(63,94,251,0.5) 0%, rgba(252,70,107,0.5) 100%); */
+  margin-top:20px
+}
+body{
+  /* background-image: url("https://images.pexels.com/photos/1242348/pexels-photo-1242348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0, 0,0,0.3) ), url("https://149349300.v2.pressablecdn.com/wp-content/uploads/2019/06/3d-cube-background-4k-yo.jpg");
+  background-size: cover;
+  overflow-x: hidden;
+  font-family: 'Metal Mania', cursive !important;
+  color : white !important;
+}
+.slider-left{
+  display:none
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input{
+  color :white !important;
+  background-color: rgba(255,255,255,0.3) !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input > label{
+  color:white !important
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.label{
+  font-size: 25px;
 }
-
-.App-link {
-  color: #61dafb;
+.homechoose{
+  text-align: left ;
+  padding-left: 40px;
+  font-size: 20px;
+  transition: all 0.2s ease ;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homechoose:hover {
+  transform: scale(1.1);
+  
+}
+.homechoose:hover *{
+  color:aqua !important;
+}
+.tv{
+  background-color:rgba(39, 88, 137,0.8);
+}
+.tv  h3{
+  font-size:30px
 }
